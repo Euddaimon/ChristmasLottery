@@ -1,0 +1,35 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image:  url(grinch2.gif);
+    background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+}
+
+.glow {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(197, 28, 28), 0 0 20px rgb(252, 12, 4), 0 0 30px #e60000, 0 0 40px #e65400, 0 0 50px #e69d00, 0 0 60px #d7e600, 0 0 70px #e6c400;
+    }
+    to {
+      text-shadow: 0 0 20px rgb(39, 175, 50), 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #4dffe1, 0 0 80px #4dff9d;
+    }
+}
+
+.form{
+    justify-content: center;
+    align-items: center;
+}
